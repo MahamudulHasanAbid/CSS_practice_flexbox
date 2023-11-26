@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning flexbox is so important.">
+    <title>Flexbox practice-HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+           height: 200px;
+            width: 80vw;
+            background-color: aqua;
+            box-sizing: border-box;
+            border: 5px solid slateblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 2px;
+           
+        }
+        .box{
+            padding: 32px;
+            border: 2px solid black;
+            text-align: center;
+            
+        }
+        
+       
+        .box:nth-child(odd){
+            align-self:flex-start;
+            background-color: blanchedalmond
+        }
+        .box:nth-child(even){
+            align-self: flex-end;
+            background-color:burlywood
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box ">1</div>
+        <div class="box ">2</div>
+        <div class="box ">3</div>
+        <div class="box ">4</div>
+        <div class="box ">5</div>
+        <div class="box">6</div>
+        <div class="box ">7</div>
+        <div class="box ">8</div>
+        <div class="box ">9</div>
+        <div class="box ">10</div>
+    
+    </div>
+</body>
+</html>
